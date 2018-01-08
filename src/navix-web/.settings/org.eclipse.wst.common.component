@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="navix">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="navix-core-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-core/navix-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-tag-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-tag/navix-tag">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-authority-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-authority/navix-authority">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-parameter-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-parameter/navix-parameter">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-wda-api-1.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-wda-api/navix-wda-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-quartz-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-quartz/navix-quartz">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-doc-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-doc/navix-doc">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-doc-so-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-doc-so/navix-doc-so">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-lucene-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-lucene/navix-lucene">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-group-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-group/navix-group">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-webfile-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-webfile/navix-webfile">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-know-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-know/navix-know">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navix-api-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-api/navix-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/navix-web/target/classes"/>
+        <property name="context-root" value="navix"/>
+    </wb-module>
+</project-modules>
