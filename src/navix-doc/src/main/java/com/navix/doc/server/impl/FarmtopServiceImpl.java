@@ -15,11 +15,6 @@ import com.navix.doc.server.FarmtopServiceInter;
 /* *
  *功能：置顶文档服务层实现类
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20150707114057
- *说明：
  */
 @Service
 public class FarmtopServiceImpl implements FarmtopServiceInter {

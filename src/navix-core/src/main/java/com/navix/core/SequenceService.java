@@ -7,8 +7,6 @@ import com.navix.core.auth.util.MD5;
 
 /**
  * 机器码生成的通用服务
- * 
- * @author 杨尚川
  */
 public class SequenceService {
 	/**

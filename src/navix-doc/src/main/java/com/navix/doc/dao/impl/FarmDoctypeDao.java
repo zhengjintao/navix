@@ -21,7 +21,7 @@ import com.navix.doc.domain.FarmDoctype;
 /**
  * 文档分类
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

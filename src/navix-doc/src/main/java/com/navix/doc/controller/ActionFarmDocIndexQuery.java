@@ -22,7 +22,6 @@ import com.navix.doc.server.FarmDocManagerInter;
 /**
  * 全文索引
  * 
- * @author zhanghc
  * 
  */
 @RequestMapping("/docIndex")

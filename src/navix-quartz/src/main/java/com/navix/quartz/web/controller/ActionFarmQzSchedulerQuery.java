@@ -35,7 +35,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * 计划任务管理
  * 
- * @author autoCode
+ * @author 
  * 
  */
 @RequestMapping("/qzScheduler")

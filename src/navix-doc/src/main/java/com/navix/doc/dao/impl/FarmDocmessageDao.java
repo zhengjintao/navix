@@ -21,7 +21,7 @@ import com.navix.doc.domain.FarmDocmessage;
 /**
  * 留言板
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

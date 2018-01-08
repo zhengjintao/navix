@@ -12,11 +12,6 @@ import com.navix.core.web.easyui.EasyUiTreeNode;
 /* *
  *功能：组织机构服务类接口
  *详细：
- *
- *版本：v0.1
- *作者：Farm代码工程自动生成
- *日期：20141122211253
- *说明：
  */
 public interface OrganizationServiceInter {
 	/**

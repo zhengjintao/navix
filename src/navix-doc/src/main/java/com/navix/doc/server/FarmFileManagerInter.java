@@ -11,7 +11,6 @@ public interface FarmFileManagerInter {
 	/**
 	 * 附件类型
 	 * 
-	 * @author 王东
 	 * 
 	 */
 	public enum FILE_TYPE {

@@ -22,11 +22,6 @@ import javax.annotation.Resource;
 /* *
  *功能：岗位权限持久层实现
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20141204174206
- *说明：
  */
 @Repository
 public class PostactionDaoImpl extends HibernateSQLTools<Postaction> implements

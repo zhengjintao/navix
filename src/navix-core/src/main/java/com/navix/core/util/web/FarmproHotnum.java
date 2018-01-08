@@ -11,7 +11,6 @@ import com.navix.core.time.TimeTool;
 /**
  * 计算访问热度
  * 
- * @author Administrator
  * 
  */
 public class FarmproHotnum {

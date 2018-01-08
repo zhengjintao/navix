@@ -11,11 +11,6 @@ import org.hibernate.annotations.GenericGenerator;
 /* *
  *功能：用户个性化参数类
  *详细：
- *
- *版本：v0.1
- *作者：王东
- *日期：20141204174206
- *说明：
  */
 @Entity(name = "Aloneparameterlocal")
 @Table(name = "navix_parameter_local")

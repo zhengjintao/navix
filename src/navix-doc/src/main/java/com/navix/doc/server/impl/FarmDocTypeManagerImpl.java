@@ -48,7 +48,7 @@ import com.navix.parameter.FarmParameterService;
 /**
  * 文档分类管理
  * 
- * @author MAC_wd
+ * @author 
  */
 @Service
 public class FarmDocTypeManagerImpl implements FarmDocTypeInter {

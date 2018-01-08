@@ -13,7 +13,7 @@ import com.navix.core.web.constant.FarmConstant;
 /**
  * 用户是否有该文档的审核权限
  * 
- * @author wangdong
+ * @author 
  *
  */
 public class AuditIsShowForUser extends TagSupport {

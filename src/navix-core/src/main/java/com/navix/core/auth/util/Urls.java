@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 权限验证帮助类
  * 
- * @author WangDong
- * @date Mar 14, 2010
  * 
  */
 public class Urls {

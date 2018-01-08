@@ -5,7 +5,7 @@ import com.navix.lucene.adapter.DocMap;
 /**
  * 基于lucene的全文检索,索引引擎
  * 
- * @author wangdong
+ * @author 
  * 
  */
 public interface DocIndexInter {

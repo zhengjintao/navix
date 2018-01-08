@@ -35,7 +35,7 @@ import com.navix.web.util.ThemesUtil;
 /**
  * 店铺
  * 
- * @author zhengjintao
+ * @author 
  *
  */
 @RequestMapping("/webgroup")
@@ -144,7 +144,7 @@ public class WebGroupController extends WebUtils {
 	}
 
 	/**
-	 * 编辑店铺首页 v1.0 zhanghc 2015年9月24日下午7:33:48
+	 * 编辑店铺首页
 	 * 
 	 * @param group
 	 * @param session

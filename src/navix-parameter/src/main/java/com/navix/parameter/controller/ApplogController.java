@@ -23,7 +23,7 @@ import com.navix.parameter.service.AloneApplogServiceInter;
 /**
  * 系统日志
  * 
- * @author autoCode
+ * @author 
  * 
  */
 @RequestMapping("/log")

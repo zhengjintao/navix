@@ -4,7 +4,7 @@ import java.net.URL;
 
 
 /**处理网络资源时替换和处理URL的接口
- * @author Administrator
+ * @author 
  *
  */
 public interface HttpResourceHandle {

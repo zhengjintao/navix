@@ -26,8 +26,7 @@ import com.navix.parameter.service.DictionaryEntityServiceInter;
 /**
  * 数据字典
  * 
- * @author zhaonaixia
- * @time 2015-7-06 上午10:19:25
+ * @author 
  * 
  */
 @RequestMapping("/dictionary")

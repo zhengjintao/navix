@@ -70,7 +70,7 @@ public class NavixWebFileManagerImpl implements NavixWebFileManagerInter {
 		doc.getDoc().setReadpop(readPop.getValue());
 		doc.getDoc().setWritepop(editPop.getValue());
 		doc.setTexts(text, currentUser);
-		doc.setFiles(new ArrayList<FarmDocfile>());// 重置附件_zhanghc_20150919
+		doc.setFiles(new ArrayList<FarmDocfile>());// 重置附件
 		for (String id : fileid) {
 			doc.addFile(farmFileManagerImpl.getFile(id));
 		}

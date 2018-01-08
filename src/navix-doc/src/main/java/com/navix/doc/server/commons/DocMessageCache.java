@@ -5,7 +5,6 @@ import java.util.Queue;
 
 /**
  * 人员开门队列
- * v1.0 zhanghc 2015年9月23日上午11:30:38
  */
 public class DocMessageCache {
 	

@@ -3,8 +3,6 @@ package com.navix.core.auth.util;
 /**
  * 密码编码解码类
  * 
- * @author 王东
- * 
  */
 public interface AuthenticateInter {
 	/**

@@ -5,7 +5,7 @@ import com.navix.parameter.FarmParameterService;
 /**
  * 没有读取权限异常
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public class CanNoReadException extends Exception {

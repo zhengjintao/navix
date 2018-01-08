@@ -25,7 +25,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * 触发器定义
  * 
- * @author autoCode
+ * @author 
  * 
  */
 @RequestMapping("/qzTrigger")

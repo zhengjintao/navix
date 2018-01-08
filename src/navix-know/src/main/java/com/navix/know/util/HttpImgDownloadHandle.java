@@ -16,7 +16,7 @@ import com.navix.core.auth.domain.LoginUser;
 /**
  * 下载网页中的图片资源
  * 
- * @author wangdong
+ * @author 
  *
  */
 public class HttpImgDownloadHandle implements HttpResourceHandle {

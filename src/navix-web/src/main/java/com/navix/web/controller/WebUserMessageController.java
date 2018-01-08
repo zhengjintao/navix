@@ -24,7 +24,7 @@ import com.navix.web.util.ThemesUtil;
 /**
  * 用户消息
  * 
- * @author zhengjintao
+ * @author 
  * 
  */
 @RequestMapping("/webusermessage")

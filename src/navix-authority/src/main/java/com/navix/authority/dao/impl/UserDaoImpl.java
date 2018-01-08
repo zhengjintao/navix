@@ -24,11 +24,6 @@ import javax.transaction.Transactional;
 /* *
  *功能：用户持久层实现
  *详细：
- *
- *版本：v0.1
- *作者：王东
- *日期：20141119144919
- *说明：
  */
 @Repository
 public class UserDaoImpl extends HibernateSQLTools<User> implements UserDaoInter {

@@ -10,7 +10,7 @@ import com.navix.core.sql.result.DataResult;
 /**
  * 分装查询结果集合
  * 
- * @author wangdong
+ * @author 
  * 
  */
 public class IRResult {

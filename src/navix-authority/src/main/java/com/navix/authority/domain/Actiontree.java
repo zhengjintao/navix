@@ -11,11 +11,6 @@ import org.hibernate.annotations.GenericGenerator;
 /* *
  *功能：构造权限类
  *详细：
- *
- *版本：v0.1
- *作者：Farm代码工程自动生成
- *日期：20141122211253
- *说明：
  */
 @Entity(name = "Actiontree")
 @Table(name = "navix_AUTH_ACTIONTREE")

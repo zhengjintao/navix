@@ -28,7 +28,7 @@ import com.navix.quartz.server.FarmQzSchedulerManagerInter;
 /**
  * 计划任务管理
  * 
- * @author MAC_wd
+ * @author 
  */
 @Service
 public class FarmQzSchedulerManagerImpl implements FarmQzSchedulerManagerInter {

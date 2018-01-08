@@ -21,7 +21,7 @@ import com.navix.doc.domain.FarmDocgroup;
 /**
  * 店铺
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

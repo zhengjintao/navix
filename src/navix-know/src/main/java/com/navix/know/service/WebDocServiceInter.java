@@ -9,7 +9,7 @@ import com.navix.know.util.HttpResourceHandle;
 /**
  * 网络文档功能接口
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public interface WebDocServiceInter {

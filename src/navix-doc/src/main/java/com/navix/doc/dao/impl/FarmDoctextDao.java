@@ -19,7 +19,7 @@ import com.navix.doc.dao.FarmDoctextDaoInter;
 import com.navix.doc.domain.FarmDoctext;
 
 /**文档内容
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

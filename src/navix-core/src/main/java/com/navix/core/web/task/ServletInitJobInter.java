@@ -6,7 +6,6 @@ import javax.servlet.ServletContext;
 /**
  * 随系统启动任务接口
  * 
- * @author 王东
  * 
  */
 public interface ServletInitJobInter {

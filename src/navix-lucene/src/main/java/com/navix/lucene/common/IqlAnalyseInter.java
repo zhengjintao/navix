@@ -6,7 +6,7 @@ import org.apache.lucene.search.Sort;
 /**
  * 全文检索语法分析器（WHERE(sdf,dfd=sdfsfd)ORDER_BY(dddd ASC)）
  * 
- * @author wangdong
+ * @author 
  * 
  */
 public interface IqlAnalyseInter {

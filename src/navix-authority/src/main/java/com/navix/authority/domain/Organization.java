@@ -8,16 +8,9 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
-
-
 /* *
  *功能：组织机构类
  *详细：
- *
- *版本：v0.1
- *作者：Farm代码工程自动生成
- *日期：20141122211253
- *说明：
  */
 @Entity(name = "Organization")
 @Table(name = "navix_AUTH_ORGANIZATION")

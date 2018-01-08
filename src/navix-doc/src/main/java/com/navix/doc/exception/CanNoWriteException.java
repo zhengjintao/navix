@@ -5,7 +5,7 @@ import com.navix.parameter.FarmParameterService;
 /**
  * 没有修改权限异常
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public class CanNoWriteException extends Exception {

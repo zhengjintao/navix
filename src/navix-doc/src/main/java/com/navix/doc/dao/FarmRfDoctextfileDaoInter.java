@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 /**中间表-内容-附件
- * @author MAC_wd
+ * @author 
  *
  */
 public interface FarmRfDoctextfileDaoInter  {

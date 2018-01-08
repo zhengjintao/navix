@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 /**计划任务管理
- * @author MAC_wd
+ * @author 
  *
  */
 public interface FarmQzSchedulerDaoInter  {

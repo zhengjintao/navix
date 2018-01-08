@@ -19,10 +19,6 @@ import com.navix.core.util.spring.HibernateSessionFactory;
 /**
  * 数据库查询封装类
  * 
- * @author 王东
- * @version 2012
- * @version 2014-10-29 重构：1.缓存带分页2.重构代码3.缓存更新时使用线程
- * 
  */
 public class DataQuery {
 	static final Logger log = Logger.getLogger(DataQuery.class);
@@ -31,7 +27,7 @@ public class DataQuery {
 	/**
 	 * 缓存器单位枚举值
 	 * 
-	 * @author Administrator
+	 * @author 
 	 * 
 	 */
 	public enum CACHE_UNIT {

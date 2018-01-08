@@ -13,8 +13,6 @@ import com.navix.doc.domain.ex.DocBrief;
 /**
  * 文档用量接口
  * 
- * @author 王东
- * @version 20140902
  */
 public interface FarmDocRunInfoInter {
 	/**

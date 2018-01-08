@@ -21,7 +21,7 @@ import com.navix.doc.domain.FarmDocruninfo;
 /**
  * 实体管理
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

@@ -19,7 +19,7 @@ import com.navix.doc.dao.FarmRfDoctextfileDaoInter;
 import com.navix.doc.domain.FarmRfDoctextfile;
 
 /**中间表-内容-附件
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

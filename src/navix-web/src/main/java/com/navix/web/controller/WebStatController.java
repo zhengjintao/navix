@@ -30,7 +30,7 @@ import com.navix.web.util.ThemesUtil;
 /**
  * 统计信息
  * 
- * @author zhengjintao
+ * @author 
  *
  */
 @RequestMapping("/webstat")

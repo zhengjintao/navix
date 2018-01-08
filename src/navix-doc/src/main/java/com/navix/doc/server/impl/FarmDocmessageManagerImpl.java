@@ -31,7 +31,7 @@ import com.navix.doc.server.commons.DocMessageCache;
 /**
  * 留言板
  * 
- * @author MAC_wd
+ * @author 
  */
 @Service
 public class FarmDocmessageManagerImpl implements FarmDocmessageManagerInter {

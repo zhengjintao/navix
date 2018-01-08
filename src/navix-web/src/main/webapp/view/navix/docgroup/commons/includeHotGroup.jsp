@@ -1,7 +1,7 @@
 <%@ page language="java" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib uri="/view/conf/farmtag.tld" prefix="PF"%><%@taglib
-	uri="http://java.sun.com/jsp/jstl/functions" prefix="fun"%>
+<%@ taglib uri="/view/conf/farmtag.tld" prefix="PF"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fun"%>
 <div class="row column_box">
 	<div class="col-sm-12"><jsp:include
 			page="../../operation/includeGroupOperate.jsp"></jsp:include>

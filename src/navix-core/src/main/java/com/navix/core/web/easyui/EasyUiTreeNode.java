@@ -17,7 +17,6 @@ import com.navix.core.sql.result.DataResult;
 /**
  * 用来封装easyUI tree节点的数据实体
  * 
- * @author 王东
  * @date 2013-4-18 [{ "id": 1, "text": "Node 1", "state": "closed", "children":
  * @note [{ "id": 11, "text": "Node 11" },{ "id": 12, "text": "Node 12" }] },{
  *       "id": 2, "text": "Node 2", "state": "closed" }]

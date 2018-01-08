@@ -23,11 +23,6 @@ import javax.annotation.Resource;
 /* *
  *功能：用户个性化参数持久层实现
  *详细：
- *
- *版本：v0.1
- *作者：王东
- *日期：20141204174206
- *说明：
  */
 @Repository
 public class AloneparameterlocalDaoImpl implements AloneparameterlocalDaoInter {

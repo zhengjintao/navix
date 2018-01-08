@@ -14,7 +14,7 @@ import com.navix.parameter.service.impl.PropertiesFileService;
 /**
  * 框架系统参数服务
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public class FarmParameterService implements ParameterService {

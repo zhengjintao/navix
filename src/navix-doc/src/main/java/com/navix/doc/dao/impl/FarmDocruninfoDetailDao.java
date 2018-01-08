@@ -21,7 +21,7 @@ import com.navix.doc.domain.FarmDocruninfoDetail;
 /**
  * 用户用量明细
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

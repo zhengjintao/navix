@@ -10,11 +10,6 @@ import org.hibernate.annotations.GenericGenerator;
 /* *
  *功能：置顶文档类
  *详细：
- *
- *版本：v2.1
- *作者：FarmCode代码工程
- *日期：20150707114057
- *说明：
  */
 @Entity(name = "UserPost")
 @Table(name = "navix_auth_userpost")

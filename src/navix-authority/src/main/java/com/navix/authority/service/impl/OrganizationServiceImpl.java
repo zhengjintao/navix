@@ -31,11 +31,6 @@ import com.navix.core.web.easyui.EasyUiTreeNode;
 /* *
  *功能：组织机构服务实现类
  *详细：
- *
- *版本：v0.1
- *作者：Farm代码工程自动生成
- *日期：20141122211253
- *说明：
  */
 @Service
 public class OrganizationServiceImpl implements OrganizationServiceInter {

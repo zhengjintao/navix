@@ -23,11 +23,6 @@ import javax.transaction.Transactional;
 /* *
  *功能：用户岗位持久层实现
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20141204174206
- *说明：
  */
 @Repository
 public class UserpostDaoImpl extends HibernateSQLTools<Userpost> implements

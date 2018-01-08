@@ -31,11 +31,6 @@ import javax.servlet.http.HttpSession;
 /* *
  *功能：置顶文档控制层
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20150707114057
- *说明：
  */
 @RequestMapping("/farmtop")
 @Controller
@@ -203,7 +198,6 @@ public class FarmtopController extends WebUtils {
 	
 	/**
 	 * 达到文档置顶选择文档页面
-	 * v1.0 zhanghc 2015年9月5日下午12:59:45
 	 * @return ModelAndView
 	 */
 	@RequestMapping("/toDocTopChooseDoc")
@@ -213,7 +207,6 @@ public class FarmtopController extends WebUtils {
 	
 	/**
 	 * 文档置顶选择文档列表数据，只要读权限是公开的数据
-	 * v1.0 zhanghc 2015年9月5日下午1:03:03
 	 * @param query
 	 * @param request
 	 * @return Map<String,Object>

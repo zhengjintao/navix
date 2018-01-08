@@ -16,8 +16,6 @@ import com.navix.core.sql.result.DataResults;
 /**
  * hibernate的帮助类
  * 
- * @author 王东
- * @date 2012-12-30
  */
 public class HibernateQueryHandle {
 	private static final String SqlSelectSize = " select count(*) num "; // 默认查询数量头

@@ -73,7 +73,7 @@
 			<artifactId>jsoup</artifactId>
 			<version>1.7.3</version>
 		</dependency>
-		<!-- 文档上传依赖jar_zhanghc_2015.8.29 -->
+		<!-- 文档上传依赖jar -->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>

@@ -3,8 +3,6 @@ package com.navix.core.page;
 /**
  * 页面类型
  * 
- * @author wangdong
- * 
  */
 public enum OperateType {
 	/**

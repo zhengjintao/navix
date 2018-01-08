@@ -23,7 +23,7 @@ import com.navix.doc.domain.FarmRfDoctype;
 /**
  * 中间表-分类文档
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

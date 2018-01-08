@@ -18,7 +18,7 @@ import org.wltea.analyzer.core.Lexeme;
 
 
 /**分词服务
- * @author Administrator
+ * @author 
  *
  */
 public class WordAnalyzerFace {

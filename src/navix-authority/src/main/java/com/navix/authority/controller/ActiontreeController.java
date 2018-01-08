@@ -29,11 +29,6 @@ import org.springframework.web.servlet.ModelAndView;
 /* *
  *功能：构造权限控制层
  *详细：
- *
- *版本：v0.1
- *作者：Farm代码工程自动生成
- *日期：20141122211253
- *说明：
  */
 @RequestMapping("/actiontree")
 @Controller

@@ -14,7 +14,7 @@ import com.navix.parameter.service.AloneApplogServiceInter;
 /**
  * 系统日志
  * 
- * @author MAC_wd
+ * @author 
  */
 @Service
 public class AloneApplogServiceImpl implements AloneApplogServiceInter {

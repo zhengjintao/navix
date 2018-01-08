@@ -10,11 +10,6 @@ import com.navix.doc.domain.Weburl;
 /* *
  *功能：推荐服务服务层接口
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20150707114057
- *说明：
  */
 public interface WeburlServiceInter {
 	/**
@@ -64,7 +59,6 @@ public interface WeburlServiceInter {
 
 	/**
 	 * 删除附件
-	 * v1.0 zhanghc 2015年11月12日下午8:34:32
 	 * @param imgid
 	 * void
 	 */

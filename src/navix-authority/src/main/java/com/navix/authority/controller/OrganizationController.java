@@ -30,11 +30,6 @@ import com.navix.core.web.easyui.EasyUiUtils;
 /* *
  *功能：组织机构控制层
  *详细：
- *
- * 版本：v0.1
- * @author zhaonaixia
- * @time 2015-6-26 上午10:19:25
- * 说明：
  */
 @RequestMapping("/organization")
 @Controller
@@ -381,7 +376,7 @@ public class OrganizationController extends WebUtils {
 	}
 
 	/**
-	 * 返回树数据 v1.0 zhanghc 2015年9月6日下午1:58:25
+	 * 返回树数据
 	 * 
 	 * @return List<Organization>
 	 */
@@ -393,7 +388,7 @@ public class OrganizationController extends WebUtils {
 	// ----------------------------------------------------------------------------------
 
 	/**
-	 * 获取岗位 v1.0 zhanghc 2015年9月6日下午2:43:50
+	 * 获取岗位
 	 * 
 	 * @param orgId
 	 *            机构ID
@@ -406,7 +401,7 @@ public class OrganizationController extends WebUtils {
 	}
 
 	/**
-	 * 获取岗位，带父机构可用的岗位 v1.0 zhanghc 2015年9月7日下午1:48:14
+	 * 获取岗位，带父机构可用的岗位
 	 * 
 	 * @param orgId
 	 * @return List<Map<String,Object>>

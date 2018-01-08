@@ -30,7 +30,7 @@ import com.navix.core.web.easyui.EasyUiUtils;
 /**
  * 文件
  * 
- * @author autoCode
+ * @author 
  * 
  */
 @RequestMapping("/group")

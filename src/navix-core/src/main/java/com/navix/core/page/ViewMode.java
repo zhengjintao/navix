@@ -9,8 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * ajax请求时的json模型
- * 
- * @author wangdong
  *
  */
 public class ViewMode {

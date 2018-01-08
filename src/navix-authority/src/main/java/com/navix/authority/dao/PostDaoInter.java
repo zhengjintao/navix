@@ -14,11 +14,6 @@ import java.util.Map;
 /* *
  *功能：岗位数据库持久层接口
  *详细：
- *
- *版本：v0.1
- *作者：Farm代码工程自动生成
- *日期：20141124152033
- *说明：
  */
 public interface PostDaoInter  {
  /** 删除一个岗位实体

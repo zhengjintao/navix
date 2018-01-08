@@ -7,9 +7,6 @@ import java.util.Map.Entry;
 /**
  * 参数服务接口
  * 
- * @author wangdong
- * @version 2014-12
- * 
  */
 public interface ParameterService {
 

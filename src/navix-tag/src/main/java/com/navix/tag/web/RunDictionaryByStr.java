@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
 import com.navix.core.util.validate.ValidUtils;
 
 /**
- * @author Administrator
+ * @author 
  *
  */
 public class RunDictionaryByStr extends TagSupport {

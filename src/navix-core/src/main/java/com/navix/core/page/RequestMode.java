@@ -12,8 +12,6 @@ import com.navix.core.auth.domain.LoginUser;
 /**
  * 封装一次页面请求的状态
  * 
- * @author wangdong
- * 
  */
 public class RequestMode implements java.io.Serializable {
 	/**

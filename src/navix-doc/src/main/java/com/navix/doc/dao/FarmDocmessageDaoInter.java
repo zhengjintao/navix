@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * 留言板
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 public interface FarmDocmessageDaoInter {

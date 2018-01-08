@@ -21,7 +21,7 @@ import com.navix.tag.doc.DefaultIndexPageTaget;
 /**
  * 用户登录注册管理
  * 
- * @author zhengjintao
+ * @author 
  * 
  */
 @RequestMapping("/login")

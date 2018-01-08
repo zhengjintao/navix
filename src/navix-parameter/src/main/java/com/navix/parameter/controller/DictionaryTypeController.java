@@ -28,8 +28,7 @@ import com.navix.parameter.service.DictionaryTypeServiceInter;
 /**
  * 字典类型
  * 
- * @author zhaonaixia
- * @time 2015-7-06 上午10:19:25
+ * @author 
  * 
  */
 @RequestMapping("/dictionaryType")

@@ -3,8 +3,6 @@ package com.navix.core.page;
 /**
  * 提交状态，用来标志操作是否成功，多用于页面对后台操作的判断
  * 
- * @author wangdong
- * 
  */
 public enum StateType {
 	/**

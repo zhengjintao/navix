@@ -12,8 +12,6 @@ import org.apache.log4j.Logger;
 /**
  * 结果集合工具类
  * 
- * @author 王东
- * 
  */
 public class DataResults {
 	private static final Logger log = Logger.getLogger(DataResults.class);

@@ -11,9 +11,6 @@ import com.navix.core.auth.exception.LoginUserNoExistException;
 /**
  * 权限服务接口
  * 
- * @author wangdong
- * @version 2014-12
- * 
  */
 public interface AuthorityService {
 

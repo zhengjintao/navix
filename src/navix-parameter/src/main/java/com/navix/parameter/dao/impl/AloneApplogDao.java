@@ -20,7 +20,7 @@ import java.util.Map;
 import javax.annotation.Resource;
 
 /**系统日志
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

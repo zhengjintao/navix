@@ -5,7 +5,7 @@ import com.navix.parameter.FarmParameterService;
 /**
  * 商品没有存在异常
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public class DocNoExistException extends Exception {

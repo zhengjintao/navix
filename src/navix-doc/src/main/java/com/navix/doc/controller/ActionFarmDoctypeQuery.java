@@ -31,7 +31,6 @@ import com.navix.parameter.FarmParameterService;
 /**
  * 文档分类
  * 
- * @author autoCode
  * 
  */
 @RequestMapping("/doctype")

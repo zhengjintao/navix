@@ -34,7 +34,6 @@ import com.navix.doc.server.FarmDocOperateRightInter.POP_TYPE;
 /**
  * 商品管理
  * 
- * @author autoCode
  * 
  */
 @RequestMapping("/doc")

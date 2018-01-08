@@ -170,8 +170,7 @@ public class DocQueryImpl implements DocQueryInter {
 				// 高亮词{--
 				String highLight = null;
 				/**
-				 * <--------------------
-				 * 2013-10-30王东，问题：页面上高亮关键字被截断导致样式扩散，处理：将下面语句从209行移植到该处
+				 * 问题：页面上高亮关键字被截断导致样式扩散，处理：将下面语句从209行移植到该处
 				 */
 				int textLength = Integer.valueOf(IndexConf
 						.getString("config.file.lucene_highLight_maxnum"));

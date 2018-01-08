@@ -15,8 +15,6 @@ import com.navix.core.sql.result.DataResult;
 /**
  * UI扩展工具类
  * 
- * @author 王东
- * @date 2013-4-28
  */
 public class EasyUiUtils {
 	/**

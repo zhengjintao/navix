@@ -6,9 +6,6 @@ import java.util.List;
 
 /**
  * 查询条件的封装类，配合DataQuery使用
- * 
- * @author 王东
- * @date 2012-12-30
  */
 public class DBRule {
 	private String key;// where key

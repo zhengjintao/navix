@@ -15,7 +15,7 @@ import com.navix.doc.exception.DocNoExistException;
 /**
  * 商品管理
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 public interface FarmDocManagerInter {

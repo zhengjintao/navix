@@ -7,14 +7,13 @@ import com.navix.doc.domain.FarmDoctype;
 /**
  * 文档权限操作接口
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public interface FarmDocOperateRightInter {
 	/**
 	 * 权限类型（阅读/编辑）
 	 * 
-	 * @author 王东
 	 * 
 	 */
 	public enum POP_TYPE {

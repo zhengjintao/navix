@@ -30,11 +30,6 @@ import org.springframework.web.servlet.ModelAndView;
 /* *
  *功能：用户控制层
  *详细：
- *
- * 版本：v0.1
- * @author zhaonaixia
- * @time 2015-6-26 上午10:19:25
- * 说明：
  */
 @RequestMapping("/user")
 @Controller

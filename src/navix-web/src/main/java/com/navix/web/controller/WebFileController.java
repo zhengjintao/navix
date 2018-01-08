@@ -36,7 +36,7 @@ import com.navix.webfile.server.NavixWebFileManagerInter;
 /**
  * 资源文件
  * 
- * @author zhengjintao
+ * @author 
  * 
  */
 @RequestMapping("/webfile")

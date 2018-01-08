@@ -20,7 +20,7 @@ class hotCase {
 /**
  * 计算热词（如搜索关键字的统计）
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public class WebHotCase {

@@ -13,11 +13,6 @@ import com.navix.core.sql.query.DataQuery;
 /* *
  *功能：用户服务层接口
  *详细：
- *
- *版本：v0.1
- *作者：王东
- *日期：20141119144919
- *说明：
  */
 public interface UserServiceInter {
 	/**

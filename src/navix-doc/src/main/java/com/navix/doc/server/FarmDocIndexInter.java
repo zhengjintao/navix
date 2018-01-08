@@ -9,8 +9,6 @@ import com.navix.doc.domain.ex.DocEntire;
 /**
  * 文档全文检索服务
  * 
- * @author 王东
- * @version 20140902
  */
 public interface FarmDocIndexInter {
 

@@ -13,8 +13,6 @@ import com.navix.core.util.web.WebVisitBuff;
 /**
  * 平台工具类入口
  * 
- * @author wangdong
- * 
  */
 public class FarmUtils {
 	/**获得验证类工具

@@ -24,11 +24,6 @@ import com.navix.doc.server.FarmDocRunInfoInter;
 /* *
  *功能：文档发布排名控制层
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20150707114057
- *说明：
  */
 @RequestMapping("/farmReleaseRanking")
 @Controller

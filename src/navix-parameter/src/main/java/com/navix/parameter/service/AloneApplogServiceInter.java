@@ -5,7 +5,7 @@ import com.navix.parameter.domain.AloneApplog;
 
 
 /**系统日志
- * @author MAC_wd
+ * @author 
  *
  */
 public interface AloneApplogServiceInter {

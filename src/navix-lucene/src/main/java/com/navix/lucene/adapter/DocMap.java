@@ -8,7 +8,7 @@ import org.apache.lucene.document.Field.Store;
 /**
  * 封装被索引的文档为索引可用格式
  * 
- * @author wangdong
+ * @author 
  * 
  */
 public class DocMap extends HashMap<String, Object[]> {

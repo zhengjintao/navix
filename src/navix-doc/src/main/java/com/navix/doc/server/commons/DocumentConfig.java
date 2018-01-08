@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 /**
  * 应用参数工具类，获得config中定义的参数
  * 
- * @author wangdong
+ * @author 
  * 
  */
 public class DocumentConfig {

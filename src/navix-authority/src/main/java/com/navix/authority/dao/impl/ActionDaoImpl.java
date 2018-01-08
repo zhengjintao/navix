@@ -23,11 +23,6 @@ import javax.annotation.Resource;
 /* *
  *功能：权限资源持久层实现
  *详细：
- *
- *版本：v0.1
- *作者：王东
- *日期：20141119144919
- *说明：
  */
 @Repository
 public class ActionDaoImpl extends HibernateSQLTools<Action> implements

@@ -11,11 +11,6 @@ import org.hibernate.annotations.GenericGenerator;
 /* *
  *功能：权限资源类
  *详细：
- *
- *版本：v0.1
- *作者：王东
- *日期：20141119144919
- *说明：
  */
 @Entity(name = "Action")
 @Table(name = "navix_auth_action")

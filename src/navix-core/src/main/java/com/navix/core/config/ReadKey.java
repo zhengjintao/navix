@@ -11,7 +11,6 @@ import com.navix.core.auth.util.KeyUtil;
 /**
  * 读取licence
  * 
- * @author macplus
  *
  */
 public class ReadKey {

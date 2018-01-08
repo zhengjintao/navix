@@ -7,11 +7,6 @@ import com.navix.doc.domain.Farmtop;
 /* *
  *功能：置顶文档服务层接口
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20150707114057
- *说明：
  */
 public interface FarmtopServiceInter {
 	/**
@@ -54,7 +49,6 @@ public interface FarmtopServiceInter {
 
 	/**
 	 * 置顶文档选择文档列表数据
-	 * v1.0 zhanghc 2015年9月5日下午2:03:20
 	 * @param query
 	 * @return DataQuery
 	 */

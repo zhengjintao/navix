@@ -51,7 +51,6 @@ import com.navix.parameter.FarmParameterService;
 /**
  * 店铺
  * 
- * @author MAC_wd
  */
 @Service
 public class FarmDocgroupManagerImpl implements FarmDocgroupManagerInter {

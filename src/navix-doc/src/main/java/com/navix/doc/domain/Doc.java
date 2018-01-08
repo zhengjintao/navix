@@ -10,13 +10,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import com.navix.core.time.TimeTool;
 /* *
- *功能：文档类
- *详细：
- *
- *版本：v2.1
- *作者：FarmCode代码工程
- *日期：20150707114057
- *说明：
+ *功能：商品类
  */
 @Entity(name = "Doc")
 @Table(name = "navix_doc")

@@ -12,7 +12,7 @@ import com.farm.wda.exception.ErrorTypeException;
 /**
  * wda远程调用接口
  * 
- * @author Administrator
+ * @author 
  *
  */
 public interface WdaAppInter extends Remote {

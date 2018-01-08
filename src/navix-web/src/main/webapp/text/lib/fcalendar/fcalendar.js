@@ -1,9 +1,7 @@
 /**
  * farm-calendar.js
  * 
- * Copyright (c) 2009-2015 www.navix.com
  * 
- * wangdong 2015.07
  */
 (function($, document) {
 	$.fn.fcalendar = function(options) {

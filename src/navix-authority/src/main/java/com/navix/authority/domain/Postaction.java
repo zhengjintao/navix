@@ -11,11 +11,6 @@ import org.hibernate.annotations.GenericGenerator;
 /* *
  *功能：岗位权限类
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20141204174206
- *说明：
  */
 @Entity(name = "Postaction")
 @Table(name = "navix_AUTH_POSTACTION")

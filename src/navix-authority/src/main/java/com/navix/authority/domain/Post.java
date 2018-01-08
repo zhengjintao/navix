@@ -11,11 +11,6 @@ import org.hibernate.annotations.GenericGenerator;
 /* *
  *功能：岗位类
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20141124152033
- *说明：
  */
 @Entity(name = "Post")
 @Table(name = "navix_AUTH_POST")

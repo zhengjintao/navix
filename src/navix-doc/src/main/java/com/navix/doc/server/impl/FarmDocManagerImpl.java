@@ -63,7 +63,7 @@ import com.navix.doc.util.HtmlUtils;
 /**
  * 商品管理
  * 
- * @author MAC_wd
+ * @author 
  */
 @Service
 public class FarmDocManagerImpl implements FarmDocManagerInter {

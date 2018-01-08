@@ -22,7 +22,7 @@ import com.navix.doc.domain.FarmDocfile;
 /**
  * 文档附件
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

@@ -10,7 +10,7 @@ import com.navix.doc.domain.ex.DocEntire;
 /**
  * 生成全文检索时辅助生成索引元数据对象
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public class LuceneDocUtil {

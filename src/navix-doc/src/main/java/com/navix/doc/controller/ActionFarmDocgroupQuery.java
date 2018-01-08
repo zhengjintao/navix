@@ -26,7 +26,6 @@ import com.navix.doc.server.FarmFileManagerInter;
 /**
  * 店铺
  * 
- * @author autoCode
  * 
  */
 @RequestMapping("/docgroup")

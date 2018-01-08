@@ -6,7 +6,6 @@ import org.hibernate.SessionFactory;
 /**
  * spring hibernateSessionFactory
  * 
- * @author 王东
  * 
  */
 public class HibernateSessionFactory {

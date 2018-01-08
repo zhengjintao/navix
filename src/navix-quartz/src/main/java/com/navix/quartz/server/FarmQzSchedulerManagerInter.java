@@ -13,7 +13,7 @@ import com.navix.quartz.domain.FarmQzTrigger;
 /**
  * 计划任务管理
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 public interface FarmQzSchedulerManagerInter {

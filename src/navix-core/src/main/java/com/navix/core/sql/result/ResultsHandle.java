@@ -5,8 +5,6 @@ import java.util.Map;
 /**
  * 结果集合的迭代接口
  * 
- * @author Administrator
- * 
  */
 public interface ResultsHandle {
 	/**

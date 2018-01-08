@@ -3,7 +3,7 @@ package com.farm.wda.exception;
 /**
  * 文档类型错误
  * 
- * @author Administrator
+ * @author 
  *
  */
 public class ErrorTypeException extends Exception {

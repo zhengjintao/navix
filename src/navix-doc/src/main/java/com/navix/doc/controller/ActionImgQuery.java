@@ -36,7 +36,6 @@ import com.navix.parameter.FarmParameterService;
 /**
  * 商品管理
  * 
- * @author autoCode
  * 
  */
 @RequestMapping("/actionImg")
@@ -70,7 +69,7 @@ public class ActionImgQuery extends WebUtils {
 			}
 			CommonsMultipartFile cmFile = (CommonsMultipartFile) file;
 			DiskFileItem item = (DiskFileItem) cmFile.getFileItem();
-			{// 小于8k不生成到临时文件，临时解决办法。zhanghc20150919
+			{// 小于8k不生成到临时文件，临时解决办法。
 				if (!item.getStoreLocation().exists()) {
 					item.write(item.getStoreLocation());
 				}
@@ -124,7 +123,7 @@ public class ActionImgQuery extends WebUtils {
 			}
 			CommonsMultipartFile cmFile = (CommonsMultipartFile) file;
 			DiskFileItem item = (DiskFileItem) cmFile.getFileItem();
-			{// 小于8k不生成到临时文件，临时解决办法。zhanghc20150919
+			{// 小于8k不生成到临时文件，临时解决办法。
 				if (!item.getStoreLocation().exists()) {
 					item.write(item.getStoreLocation());
 				}

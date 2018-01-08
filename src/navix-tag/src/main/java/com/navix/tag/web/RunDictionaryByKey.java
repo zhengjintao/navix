@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
 import com.navix.parameter.FarmParameterService;
 
 /**
- * @author Administrator
+ * @author 
  * 
  */
 public class RunDictionaryByKey extends TagSupport {

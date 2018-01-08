@@ -3,7 +3,7 @@ package com.farm.wda.exception;
 /**
  * 因为错误而停止的活动
  * 
- * @author Administrator
+ * @author 
  *
  */
 public class ErrorStopedException extends Exception {

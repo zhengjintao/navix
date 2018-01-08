@@ -23,7 +23,7 @@ import javax.annotation.Resource;
 /**
  * 任务定义
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

@@ -11,8 +11,6 @@ import com.navix.core.util.spring.HibernateSessionFactory;
 /**
  * DataQuery的查询器，可以通过线程启动（将查询结果更新到缓存中）或直接执行dosearch
  * 
- * @author 王东
- * @version 2014-10-29
  * 
  */
 public class Searcher implements Runnable {

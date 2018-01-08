@@ -16,7 +16,7 @@ import com.navix.know.util.HttpResourceHandle;
 /**
  * 配合jsoup处理HTML文档
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public class HttpDocument {

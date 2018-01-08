@@ -36,7 +36,7 @@ import com.navix.web.util.ThemesUtil;
 /**
  * 检索
  * 
- * @author zhengjintao
+ * @author 
  *
  */
 @RequestMapping("/websearch")

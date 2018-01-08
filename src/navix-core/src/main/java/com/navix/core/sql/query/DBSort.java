@@ -3,8 +3,6 @@ package com.navix.core.sql.query;
 /**
  * 排序方式的封装类，配合DataQuery使用
  * 
- * @author 王东
- * @date 2012-12-30
  */
 public class DBSort {
 	private String sortTitleText;// 排序字段

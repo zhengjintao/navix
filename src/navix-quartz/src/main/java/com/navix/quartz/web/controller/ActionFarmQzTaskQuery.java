@@ -26,7 +26,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * 任务定义
  * 
- * @author autoCode
+ * @author 
  * 
  */
 @RequestMapping("/qzTask")

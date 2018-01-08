@@ -25,7 +25,6 @@ import com.navix.doc.server.FarmFileManagerInter;
 /**
  * 文件
  * 
- * @author autoCode
  * 
  */
 @RequestMapping("/docfile")

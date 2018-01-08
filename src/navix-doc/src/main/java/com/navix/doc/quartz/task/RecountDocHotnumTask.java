@@ -16,7 +16,7 @@ import com.navix.doc.server.FarmDocRunInfoInter;
 /**
  * 计算文档热度的定时器
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public class RecountDocHotnumTask implements Job {

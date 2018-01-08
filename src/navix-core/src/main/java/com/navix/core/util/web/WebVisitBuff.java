@@ -8,8 +8,6 @@ import java.util.Set;
 /**
  * 控制用户访问的计数器工具，用来计算一个KEY在一定时间内是否已经被标记（如控制相同用户不重复计算文章的访问量）
  * 
- * @author Administrator
- * 
  */
 public class WebVisitBuff {
 	private static Map<String, WebVisitBuff> BUFF_S = new HashMap<String, WebVisitBuff>();

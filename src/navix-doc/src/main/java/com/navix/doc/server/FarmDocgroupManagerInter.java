@@ -16,7 +16,7 @@ import com.navix.doc.exception.NoGroupAuthForLicenceException;
 /**
  * 店铺
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 public interface FarmDocgroupManagerInter {
@@ -24,7 +24,7 @@ public interface FarmDocgroupManagerInter {
 	/**
 	 * 查询条件是否执行
 	 * 
-	 * @author wangdong
+	 * @author 
 	 *
 	 */
 	public enum SearchType {

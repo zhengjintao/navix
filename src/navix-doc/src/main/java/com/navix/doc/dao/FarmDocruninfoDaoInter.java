@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * 实体管理
  * 
- * @author MAC_wd
+ * @author 
  *
  */
 public interface FarmDocruninfoDaoInter {

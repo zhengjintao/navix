@@ -11,8 +11,6 @@ import com.navix.doc.so.server.plus.domain.Doctypepop;
 /**
  * 文档分类
  * 
- * @author 王东
- * @version 20140902
  */
 public interface FarmDocTypeInter {
 

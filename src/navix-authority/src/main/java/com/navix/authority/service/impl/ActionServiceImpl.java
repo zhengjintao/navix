@@ -29,11 +29,6 @@ import com.navix.core.web.easyui.EasyUiTreeNode;
 /* *
  *功能：权限资源服务层实现类
  *详细：
- *
- *版本：v0.1
- *作者：王东
- *日期：20141119144919
- *说明：
  */
 @Service
 public class ActionServiceImpl implements ActionServiceInter {

@@ -5,8 +5,6 @@ import org.apache.commons.lang.StringEscapeUtils;
 /**
  * 查询工具工具类
  * 
- * @author Administrator
- * 
  */
 public class DataQuerys {
 	/**

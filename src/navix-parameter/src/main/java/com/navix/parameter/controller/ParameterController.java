@@ -33,7 +33,7 @@ import com.navix.parameter.service.impl.PropertiesFileService;
  * 
  * @author zhang_hc
  * @time 2012-8-31 上午11:47:25
- * @author wangdong
+ * @author 
  * @time 2015-7-03 上午10:19:25
  */
 @RequestMapping("/parameter")

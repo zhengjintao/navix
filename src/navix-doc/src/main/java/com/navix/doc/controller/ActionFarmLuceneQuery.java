@@ -29,9 +29,7 @@ import com.navix.doc.server.FarmDocTypeInter;
 import com.navix.doc.server.FarmDocgroupManagerInter;
 
 /**
- * 文档管理
- * 
- * @author autoCode
+ * 商品管理
  * 
  */
 @RequestMapping("/lucene")

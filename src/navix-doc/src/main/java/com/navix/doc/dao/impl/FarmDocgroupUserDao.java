@@ -19,7 +19,7 @@ import com.navix.doc.dao.FarmDocgroupUserDaoInter;
 import com.navix.doc.domain.FarmDocgroupUser;
 
 /**店铺成员
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

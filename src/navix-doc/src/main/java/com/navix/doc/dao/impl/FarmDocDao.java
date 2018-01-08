@@ -21,7 +21,7 @@ import javax.annotation.Resource;
 import javax.transaction.Transactional;
 
 /**商品管理
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository 

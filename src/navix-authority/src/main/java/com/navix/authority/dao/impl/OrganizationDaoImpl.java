@@ -23,11 +23,6 @@ import javax.annotation.Resource;
 /* *
  *功能：组织机构持久层实现类
  *详细：
- *
- *版本：v0.1
- *作者：Farm代码工程自动生成
- *日期：20141122211253
- *说明：
  */
 @Repository
 public class OrganizationDaoImpl extends HibernateSQLTools<Organization>

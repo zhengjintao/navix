@@ -17,7 +17,6 @@ import org.apache.log4j.Logger;
 /**
  * 结果集合封装类,提供分页支持，对结果集合进行常见操作
  * 
- * @author 王东 2010年底编写 2012-08-17 增加注释
  */
 public class DataResult {
 	private static final Logger log = Logger.getLogger(DataResult.class);

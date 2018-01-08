@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 /**关注
- * @author MAC_wd
+ * @author 
  *
  */
 public interface FarmDocenjoyDaoInter  {

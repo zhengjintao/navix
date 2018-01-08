@@ -10,7 +10,7 @@ import com.navix.core.sql.query.DataQuery;
 /**
  * 商品管理
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 public interface KnowServiceInter {

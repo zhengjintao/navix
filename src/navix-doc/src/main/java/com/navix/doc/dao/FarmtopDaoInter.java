@@ -15,10 +15,6 @@ import java.util.Map;
  *功能：置顶文档数据库持久层接口
  *详细：
  *
- *版本：v0.1
- *作者：Farm代码工程自动生成
- *日期：20150707114057
- *说明：
  */
 public interface FarmtopDaoInter  {
  /** 删除一个置顶文档实体

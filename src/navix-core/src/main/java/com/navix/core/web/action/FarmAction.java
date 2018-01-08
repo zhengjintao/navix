@@ -19,8 +19,6 @@ import com.navix.core.web.online.OnlineUserOpInter;
 /**
  * 权限资源
  * 
- * @author MAC_alone
- * 
  */
 public class FarmAction {
 	private String name;

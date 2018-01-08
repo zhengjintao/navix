@@ -13,7 +13,7 @@ import com.navix.quartz.domain.FarmQzTrigger;
 /**
  * queatz的转化接口
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public interface QuartzInter {

@@ -6,7 +6,6 @@ import java.util.Date;
 /**
  * 转义工具集合
  * 
- * @author Administrator
  * 
  */
 public class FarmFormatUnits {

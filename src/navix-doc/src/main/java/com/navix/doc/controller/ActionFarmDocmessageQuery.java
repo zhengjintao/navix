@@ -26,7 +26,6 @@ import com.navix.doc.server.FarmDocmessageManagerInter;
 /**
  * 留言板
  * 
- * @author autoCode
  * 
  */
 @RequestMapping("/docmessage")

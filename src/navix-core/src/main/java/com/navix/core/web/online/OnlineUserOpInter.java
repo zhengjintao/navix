@@ -10,8 +10,6 @@ import com.navix.core.sql.result.DataResult;
  * 在线用户管理 非集群实现 实现该功能需要将方法： userLoginHandle()
  * userVisitHandle()加入到用户登录，和用户访问系统资源的代码中
  * 
- * @author wangdong
- * @date 2012-03-01
  */
 public interface OnlineUserOpInter {
 	/**

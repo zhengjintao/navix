@@ -1,7 +1,6 @@
 package com.navix.api.exception;
 
 /** 文档无法创建异常
- * @author wangdong
  *
  */
 public class DocCreatErrorExcepiton extends Exception {

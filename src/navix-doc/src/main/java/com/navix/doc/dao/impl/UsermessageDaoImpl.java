@@ -20,11 +20,6 @@ import javax.annotation.Resource;
 /* *
  *功能：用户消息持久层实现
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20150707114057
- *说明：
  */
 @Repository
 public class UsermessageDaoImpl  extends HibernateSQLTools<Usermessage> implements  UsermessageDaoInter {

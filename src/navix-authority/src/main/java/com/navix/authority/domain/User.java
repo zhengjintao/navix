@@ -13,11 +13,6 @@ import com.navix.core.auth.domain.LoginUser;
 /* *
  *功能：用户类
  *详细：
- *
- *版本：v0.1
- *作者：王东
- *日期：20141119144919
- *说明：
  */
 @Entity(name = "User")
 @Table(name = "navix_AUTH_USER")

@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * 留言板
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 public interface FarmDocmessageManagerInter {
@@ -156,7 +156,6 @@ public interface FarmDocmessageManagerInter {
 
 	/**
 	 * 
-	 * v1.0 zhanghc 2016年7月14日上午10:19:59
 	 * @param docid
 	 * @param docMessageId
 	 * @return

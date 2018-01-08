@@ -13,11 +13,6 @@ import java.util.Map;
 /* *
  *功能：构造权限持久层接口
  *详细：
- *
- *版本：v0.1
- *作者：Farm代码工程自动生成
- *日期：20141122211253
- *说明：
  */
 public interface ActiontreeDaoInter {
 	/**

@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 /**系统日志
- * @author MAC_wd
+ * @author 
  *
  */
 public interface AloneApplogDaoInter  {

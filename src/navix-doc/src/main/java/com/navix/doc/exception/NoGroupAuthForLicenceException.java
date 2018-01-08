@@ -5,7 +5,7 @@ import com.navix.parameter.FarmParameterService;
 /**
  * 没有删除权限异常
  * 
- * @author Administrator
+ * @author 
  * 
  */
 public class NoGroupAuthForLicenceException extends Exception {

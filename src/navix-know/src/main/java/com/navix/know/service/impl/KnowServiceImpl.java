@@ -38,7 +38,7 @@ import com.navix.know.util.HttpResourceHandle;
 /**
  * 商品管理
  * 
- * @author MAC_wd
+ * @author 
  */
 @Service
 public class KnowServiceImpl implements KnowServiceInter {

@@ -22,7 +22,7 @@ import javax.annotation.Resource;
 /**
  * 触发器定义
  * 
- * @author MAC_wd
+ * @author 
  * 
  */
 @Repository

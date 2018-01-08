@@ -28,11 +28,6 @@ import javax.servlet.http.HttpSession;
 /* *
  *功能：推荐服务控制层
  *详细：
- *
- *版本：v0.1
- *作者：FarmCode代码工程
- *日期：20150707114057
- *说明：
  */
 @RequestMapping("/weburl")
 @Controller
