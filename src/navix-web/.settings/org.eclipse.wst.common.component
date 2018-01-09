@@ -19,6 +19,9 @@
         <dependent-module archiveName="navix-wda-api-1.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-wda-api/navix-wda-api">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="navix-biz-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-biz/navix-biz">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="navix-quartz-3.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navix-quartz/navix-quartz">
             <dependency-type>uses</dependency-type>
         </dependent-module>
