@@ -3,7 +3,7 @@
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
-<mapper namespace="com.cosme.navix.dao.StudentDao">
+<mapper namespace="com.navix.biz.dao.StudentDao">
    
     <insert id="save" parameterType="Student">
         insert into t_app_student(id,name,sex,age) values(#{id},#{name},#{sex},#{age})

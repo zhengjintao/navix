@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.navix.biz.dao.GoodsDao">
+    <!--商品新规追加 -->
+    <insert id="insert" parameterType="Goods">
+        insert into mstr_goods(
+           SEQ_ID,
+           GOOD_ID,
+           GOOD_KBN,
+           GOOD_IMG,
+           GOOD_BLAND,
+           GOOD_REF_PRICE,
+           DEL_FLG,
+           CREATE_USER,
+           CREADE_DATE,
+           UPDATE_USER,
+           UPDATE_DATE) values
+           #{goodsSeqId},
+           #{goodsId},
+           #{goodsKbn},
+           #{goodsImg},
+           #{goodsBland},
+           #{goodsRefPrice},
+           #{delFlg},
+           #{CreateUser},
+           #{CreateDate},
+           #{updateUser},
+           #{updateDate})
+    </insert>
+    
+    <!--商品更新-->
+    <update id="update" parameterType="Goods"> 
+    </update>
+    
+    <!--商品删除-->
+    <delete id="delete" parameterType="String">
+    	update mstr_goods set DEL_FLG = 1 where SEQ_ID = #{goodsSeqId}
+    </delete>
+    
+    <!--商品查询（根据商品编号查询）-->
+    <select id="selectByGoodsId" resultType="Goods" parameterType="String">
+        select * from mstr_goods where GOOD_ID =#{goodsId}
+    </select>
+    
+    <!--商品查询（根据商品管理番号查询）-->
+    <select id="selectByGoodsSeqId" resultType="Goods" parameterType="String">
+        select * from mstr_goods where SEQ_ID =#{goodsSeqId}
+    </select>  
+</mapper>

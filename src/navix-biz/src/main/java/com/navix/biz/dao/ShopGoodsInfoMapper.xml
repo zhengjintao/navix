@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.cosme.navix.dao.ShopGoodsInfoDao">
+    <!--店铺商品信息新规追加 -->
+    <insert id="insert" parameterType="ShopGoodsInfo">
+        insert into CDATA_SHOP_GOODS_INFO(
+           SEQ_ID,
+           SHOP_SEQ_ID,
+           GOODS_SEQ_ID,
+           GOODS_DIYINFO_SEQ_ID,
+           GOODS_PRICE,
+           GOODS_STOCK,
+           DEL_FLG,
+           CREATE_USER,
+           CREADE_DATE,
+           UPDATE_USER,
+           UPDATE_DATE) values
+           #{shopGoodsInfoSeqId},
+           #{shopSeqId},
+           #{goodsSeqId},
+           #{goodsDiySeqId},
+           #{goodsPrice},
+           #{goodsStock},
+           #{delFlg},
+           #{CreateUser},
+           #{CreateDate},
+           #{updateUser},
+           #{updateDate})
+    </insert>
+    
+    <!--店铺商品信息更新-->
+    <update id="update" parameterType="ShopGoodsInfo"> 
+    </update>
+    
+    <!--店铺商品信息删除-->
+    <delete id="delete" parameterType="String">
+    	update mstr_goods set DEL_FLG = 1 where SEQ_ID = #{shopGoodsInfoSeqId}
+    </delete>
+    
+    <!--店铺商品信息查询（根据【店铺管理番号】）-->
+    <select id="selectByShopSeqId" resultType="ShopGoodsInfo" parameterType="String">
+        select * from CDATA_SHOP_GOODS_INFO where SHOP_SEQ_ID =#{shopSeqId}
+    </select>
+    
+    <!--店铺商品信息查询（根据【商品管理番号】）-->
+    <select id="selectByGoodsSeqId" resultType="ShopGoodsInfo" parameterType="String">
+        select * from CDATA_SHOP_GOODS_INFO where GOODS_SEQ_ID =#{goodsSeqId}
+    </select>  
+</mapper>
