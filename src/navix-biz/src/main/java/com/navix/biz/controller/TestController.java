@@ -6,12 +6,16 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.navix.biz.entity.Student;
+import com.navix.biz.service.GoodsService;
 import com.navix.biz.service.StudentService;
 
 @Controller
 public class TestController {
-	 //@Autowired  
+	 @Autowired  
 	 private StudentService studentService;  
+	 
+	 @Autowired  
+	 private GoodsService goodsService;  
 
 	@RequestMapping("/helloWorld")
     public String helloWorld(Model model) {

@@ -23,9 +23,9 @@ public class Goods {
 	// 删除标记
 	private int delFlg;
 	// 登录者
-	private String CreateUser;
+	private String createUser;
 	// 登录时间
-	private String CreateDate;
+	private String createDate;
 	// 更新者
 	private String updateUser;
 	// 更新时间
@@ -78,16 +78,16 @@ public class Goods {
 		this.delFlg = delFlg;
 	}
 	public String getCreateUser() {
-		return CreateUser;
+		return createUser;
 	}
 	public void setCreateUser(String createUser) {
-		CreateUser = createUser;
+		this.createUser = createUser;
 	}
 	public String getCreateDate() {
-		return CreateDate;
+		return createDate;
 	}
 	public void setCreateDate(String createDate) {
-		CreateDate = createDate;
+		this.createDate = createDate;
 	}
 	public String getUpdateUser() {
 		return updateUser;
@@ -112,8 +112,8 @@ public class Goods {
 				+", goodsBland=" + goodsBland
 				+", goodsRefPrice=" + goodsRefPrice
 				+", delFlg=" + delFlg
-				+", CreateUser=" + CreateUser
-				+", CreateDate=" + CreateDate
+				+", createUser=" + createUser
+				+", createDate=" + createDate
 				+", updateUser=" + updateUser
 				+", updateDate=" + updateDate
 				+"]";

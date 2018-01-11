@@ -3,7 +3,22 @@
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
-<mapper namespace="com.cosme.navix.dao.ShopGoodsInfoDao">
+<mapper namespace="com.navix.biz.dao.ShopGoodsInfoDao">
+    <resultMap type="ShopGoodsInfo" id="shopGoodsInfoResultMap">
+        <id property="shopGoodsInfoSeqId" column="SEQ_ID"/>
+        <result property="shopSeqId" column="SHOP_SEQ_ID"/>
+        <result property="goodsSeqId" column="GOODS_SEQ_ID"/>
+        <result property="goodsDiySeqId" column="GOODS_DIYINFO_SEQ_ID"/>
+        <result property="shopId" column="SHOP_ID"/>
+        <result property="shopImg" column="SHOP_IMG"/>
+        <result property="shopKbn" column="SHOP_KBN"/>
+        <result property="shopName" column="SHOP_NM"/>
+        <result property="shopAddress" column="SHOP_ADDRESS"/>
+        <result property="shopSimpleEpx" column="SHOP_SIMPLE_EPX"/>
+        <result property="goodsPrice" column="GOODS_PRICE"/>
+        <result property="goodsStock" column="GOODS_STOCK"/>
+    </resultMap>
+    
     <!--店铺商品信息新规追加 -->
     <insert id="insert" parameterType="ShopGoodsInfo">
         insert into CDATA_SHOP_GOODS_INFO(
@@ -25,8 +40,8 @@
            #{goodsPrice},
            #{goodsStock},
            #{delFlg},
-           #{CreateUser},
-           #{CreateDate},
+           #{createUser},
+           #{createDate},
            #{updateUser},
            #{updateDate})
     </insert>
@@ -37,16 +52,38 @@
     
     <!--店铺商品信息删除-->
     <delete id="delete" parameterType="String">
-    	update mstr_goods set DEL_FLG = 1 where SEQ_ID = #{shopGoodsInfoSeqId}
+        update mstr_goods set DEL_FLG = 1 where SEQ_ID = #{shopGoodsInfoSeqId}
     </delete>
     
     <!--店铺商品信息查询（根据【店铺管理番号】）-->
-    <select id="selectByShopSeqId" resultType="ShopGoodsInfo" parameterType="String">
-        select * from CDATA_SHOP_GOODS_INFO where SHOP_SEQ_ID =#{shopSeqId}
+    <select id="selectByShopSeqId" resultType="ShopGoodsInfo">
+        select * from CDATA_SHOP_GOODS_INFO where SHOP_SEQ_ID =#{shopSeqId} and DEL_FLG = #{1} 
     </select>
     
     <!--店铺商品信息查询（根据【商品管理番号】）-->
-    <select id="selectByGoodsSeqId" resultType="ShopGoodsInfo" parameterType="String">
-        select * from CDATA_SHOP_GOODS_INFO where GOODS_SEQ_ID =#{goodsSeqId}
+    <select id="selectByGoodsSeqId" resultMap="shopGoodsInfoResultMap">
+        select 
+            INFO.SEQ_ID,
+            INFO.SHOP_SEQ_ID,
+            INFO.GOODS_SEQ_ID,
+            INFO.GOODS_DIYINFO_SEQ_ID,
+            INFO.GOODS_PRICE,
+            INFO.GOODS_STOCK,
+            MSTR.SHOP_ID,
+            MSTR.SHOP_IMG,
+            MSTR.SHOP_KBN,
+            NM.SHOP_NM,
+            NM.SHOP_ADDRESS,
+            NM.SHOP_SIMPLE_EPX
+        from 
+            CDATA_SHOP_GOODS_INFO INFO left join MSTR_SHOP MSTR
+            on INFO.SHOP_SEQ_ID = MSTR.SEQ_ID and INFO.DEL_FLG = MSTR.DEL_FLG
+            left join MNAME_SHOP NM
+            on MSTR.SEQ_ID = NM.SEQ_ID
+        where 
+            INFO.GOODS_SEQ_ID =#{0} 
+            and INFO.DEL_FLG = #{1} 
+            and NM.LANG_KBN = #{2}
+        order by GOODS_PRICE
     </select>  
 </mapper>

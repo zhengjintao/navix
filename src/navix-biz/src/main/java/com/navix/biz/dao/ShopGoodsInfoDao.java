@@ -21,8 +21,8 @@ public interface ShopGoodsInfoDao {
 	public void delete(String shopGoodsInfoSeqId);
 	
 	// 店铺商品信息查询（根据【店铺管理番号】）
-	public List<ShopGoodsInfo> selectByShopSeqId(String shopSeqId);
+	public List<ShopGoodsInfo> selectByShopSeqId(String shopSeqId, int delFlg);
 	
 	// 店铺商品信息查询（根据【商品管理番号】）
-	public List<ShopGoodsInfo> selectByGoodsSeqId(String goodsSeqId);
+	public List<ShopGoodsInfo> selectByGoodsSeqId(String goodsSeqId, int delFlg, String langKbn);
 }

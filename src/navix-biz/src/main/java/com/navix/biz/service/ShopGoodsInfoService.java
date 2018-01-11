@@ -1,6 +1,8 @@
 package com.navix.biz.service;
 
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.navix.biz.dao.ShopGoodsInfoDao;
 import com.navix.biz.entity.ShopGoodsInfo;
@@ -15,7 +17,7 @@ import com.navix.biz.entity.ShopGoodsInfo;
 
 @Service
 public class ShopGoodsInfoService {
-	//@Autowired
+	@Autowired
     private ShopGoodsInfoDao shopGoodsInfoDao;
    
     /**
@@ -47,7 +49,7 @@ public class ShopGoodsInfoService {
      * @return 店铺商品信息
      */
     public List<ShopGoodsInfo> selectByGoodsId(String shopSeqId) {
-    	List<ShopGoodsInfo> goodsList = shopGoodsInfoDao.selectByShopSeqId(shopSeqId);
+    	List<ShopGoodsInfo> goodsList = shopGoodsInfoDao.selectByShopSeqId(shopSeqId, 0);
     	return goodsList;
     }    
     
@@ -57,7 +59,7 @@ public class ShopGoodsInfoService {
      * @return 店铺商品信息
      */
     public List<ShopGoodsInfo> selectByGoodsSeqId(String goodsSeqId) {
-    	List<ShopGoodsInfo> goodsList = shopGoodsInfoDao.selectByGoodsSeqId(goodsSeqId);
+    	List<ShopGoodsInfo> goodsList = shopGoodsInfoDao.selectByGoodsSeqId(goodsSeqId, 0, "C");
     	return goodsList;
     }
 }

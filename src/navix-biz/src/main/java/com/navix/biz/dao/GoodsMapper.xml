@@ -3,16 +3,30 @@
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
-<mapper namespace="com.navix.biz.dao.GoodsDao">
+<mapper namespace="com.cosme.navix.dao.GoodsDao">
+    <resultMap type="Goods" id="goodsResultMap">
+        <id property="goodsSeqId" column="SEQ_ID"/>
+        <result property="goodsId" column="GOOD_ID"/>
+        <result property="goodsKbn" column="GOOD_KBN"/>
+        <result property="goodsImg" column="GOOD_IMG"/>
+        <result property="goodsBland" column="GOOD_BLAND"/>
+        <result property="goodsRefPrice" column="GOOD_REF_PRICE"/>
+        <result property="delFlg" column="DEL_FLG"/>
+        <result property="createUser" column="CREATE_USER"/>
+        <result property="createDate" column="CREADE_DATE"/>
+        <result property="updateDate" column="UPDATE_USER"/>
+        <result property="name" column="UPDATE_DATE"/>
+    </resultMap>
+    
     <!--商品新规追加 -->
     <insert id="insert" parameterType="Goods">
         insert into mstr_goods(
            SEQ_ID,
-           GOOD_ID,
-           GOOD_KBN,
-           GOOD_IMG,
-           GOOD_BLAND,
-           GOOD_REF_PRICE,
+           GOODS_ID,
+           GOODS_KBN,
+           GOODS_IMG,
+           GOODS_BLAND,
+           GOODS_REF_PRICE,
            DEL_FLG,
            CREATE_USER,
            CREADE_DATE,
@@ -25,8 +39,8 @@
            #{goodsBland},
            #{goodsRefPrice},
            #{delFlg},
-           #{CreateUser},
-           #{CreateDate},
+           #{createUser},
+           #{createDate},
            #{updateUser},
            #{updateDate})
     </insert>
@@ -41,12 +55,12 @@
     </delete>
     
     <!--商品查询（根据商品编号查询）-->
-    <select id="selectByGoodsId" resultType="Goods" parameterType="String">
+    <select id="selectByGoodsId" parameterType="String" resultMap="goodsResultMap">
         select * from mstr_goods where GOOD_ID =#{goodsId}
     </select>
     
     <!--商品查询（根据商品管理番号查询）-->
-    <select id="selectByGoodsSeqId" resultType="Goods" parameterType="String">
+    <select id="selectByGoodsSeqId" parameterType="String" resultMap="goodsResultMap">
         select * from mstr_goods where SEQ_ID =#{goodsSeqId}
     </select>  
 </mapper>

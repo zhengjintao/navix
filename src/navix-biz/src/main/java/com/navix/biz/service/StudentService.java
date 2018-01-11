@@ -8,7 +8,7 @@ import com.navix.biz.entity.Student;
 
 @Service
 public class StudentService {
-	//@Autowired
+	@Autowired
     private StudentDao studentDao;
    
     public void save(Student student) {

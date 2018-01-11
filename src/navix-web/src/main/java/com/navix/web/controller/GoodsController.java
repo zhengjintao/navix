@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,6 +35,10 @@ import com.navix.doc.server.FarmDocgroupManagerInter;
 import com.navix.doc.server.FarmDocmessageManagerInter;
 import com.navix.doc.server.FarmFileIndexManagerInter;
 import com.navix.doc.server.FarmFileManagerInter;
+import com.navix.biz.entity.ShopGoodsInfo;
+import com.navix.biz.entity.Student;
+import com.navix.biz.service.ShopGoodsInfoService;
+import com.navix.biz.service.StudentService;
 import com.navix.core.auth.domain.LoginUser;
 import com.navix.core.page.ViewMode;
 import com.navix.core.web.WebUtils;
@@ -64,7 +69,10 @@ public class GoodsController extends WebUtils {
 	private FarmRfDoctypeDaoInter farmRfDoctypeDaoImpl;
 	@Resource
 	private FarmFileIndexManagerInter farmFileIndexManagerImpl;
-
+	@Resource  
+	private StudentService studentService;  
+	@Resource  
+	private ShopGoodsInfoService shopGoodsInfoService;
 	/**
 	 * 查看商品
 	 * 
@@ -74,6 +82,10 @@ public class GoodsController extends WebUtils {
 	@RequestMapping(value = "/view/Pub{docid}", method = RequestMethod.GET)
 	public ModelAndView showDoc(@PathVariable("docid") String docid, HttpSession session, HttpServletRequest request)
 			throws Exception {
+		Student stu = studentService.getStudent("Test");
+		System.out.println(stu);
+		List<ShopGoodsInfo> info = shopGoodsInfoService.selectByGoodsSeqId("000001");
+		System.out.println(info);
 		ViewMode page = ViewMode.getInstance();
 		try {
 			DocEntire doc = farmDocManagerImpl.getDoc(docid, getCurrentUser(session));

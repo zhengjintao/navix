@@ -66,5 +66,6 @@
 
 	<!-- 启动任务 -->
 	<import resource="classpath:config/sytemInitTaskBean.xml"></import>
+	<import resource="classpath:config/mybatis-beans.xml"></import>
 
 </beans>

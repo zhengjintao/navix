@@ -16,6 +16,18 @@ public class ShopGoodsInfo {
 	private String goodsSeqId;
 	// 商品自定义信息管理番号
 	private String goodsDiySeqId;
+	// 店铺编号
+	private String shopId;
+	// 店铺图片
+	private String shopImg;
+	// 店铺区分
+	private String shopKbn;
+	// 店铺名称
+	private String shopName;
+	// 店铺地址
+	private String shopAddress;
+	// 店铺简介
+	private String shopSimpleEpx;
 	// 价格
 	private String goodsPrice;
 	// 库存
@@ -23,9 +35,9 @@ public class ShopGoodsInfo {
 	// 删除标记
 	private int delFlg;
 	// 登录者
-	private String CreateUser;
+	private String createUser;
 	// 登录时间
-	private String CreateDate;
+	private String createDate;
 	// 更新者
 	private String updateUser;
 	// 更新时间
@@ -92,19 +104,19 @@ public class ShopGoodsInfo {
 	}
 
 	public String getCreateUser() {
-		return CreateUser;
+		return createUser;
 	}
 
 	public void setCreateUser(String createUser) {
-		CreateUser = createUser;
+		this.createUser = createUser;
 	}
 
 	public String getCreateDate() {
-		return CreateDate;
+		return createDate;
 	}
 
 	public void setCreateDate(String createDate) {
-		CreateDate = createDate;
+		this.createDate = createDate;
 	}
 
 	public String getUpdateUser() {
@@ -123,6 +135,54 @@ public class ShopGoodsInfo {
 		this.updateDate = updateDate;
 	}
 
+	public String getShopId() {
+		return shopId;
+	}
+
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
+	}
+
+	public String getShopImg() {
+		return shopImg;
+	}
+
+	public void setShopImg(String shopImg) {
+		this.shopImg = shopImg;
+	}
+
+	public String getShopKbn() {
+		return shopKbn;
+	}
+
+	public void setShopKbn(String shopKbn) {
+		this.shopKbn = shopKbn;
+	}
+
+	public String getShopName() {
+		return shopName;
+	}
+
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+
+	public String getShopAddress() {
+		return shopAddress;
+	}
+
+	public void setShopAddress(String shopAddress) {
+		this.shopAddress = shopAddress;
+	}
+
+	public String getShopSimpleEpx() {
+		return shopSimpleEpx;
+	}
+
+	public void setShopSimpleEpx(String shopSimpleEpx) {
+		this.shopSimpleEpx = shopSimpleEpx;
+	}
+
 	@Override
     public String toString() {
 		String str ="Goods ["
@@ -130,11 +190,17 @@ public class ShopGoodsInfo {
 				+", shopSeqId=" + shopSeqId
 				+", goodsSeqId=" + goodsSeqId
 				+", goodsDiySeqId=" + goodsDiySeqId
+				+", shopId=" + shopId
+				+", shopImg=" + shopImg
+				+", shopKbn=" + shopKbn
+				+", shopName=" + shopName
+				+", shopAddress=" + shopAddress
+				+", shopSimpleEpx=" + shopSimpleEpx
 				+", goodsPrice=" + goodsPrice
 				+", goodsStock=" + goodsStock
 				+", delFlg=" + delFlg
-				+", CreateUser=" + CreateUser
-				+", CreateDate=" + CreateDate
+				+", createUser=" + createUser
+				+", createDate=" + createDate
 				+", updateUser=" + updateUser
 				+", updateDate=" + updateDate
 				+"]";
