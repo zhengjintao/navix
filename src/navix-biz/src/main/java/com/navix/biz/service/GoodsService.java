@@ -1,5 +1,6 @@
 package com.navix.biz.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.navix.biz.dao.GoodsDao;
 import com.navix.biz.entity.Goods;
@@ -14,7 +15,7 @@ import com.navix.biz.entity.Goods;
 
 @Service
 public class GoodsService {
-	//@Autowired
+	@Autowired
     private GoodsDao goodsDao;
    
     /**
