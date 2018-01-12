@@ -3,7 +3,7 @@
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
-<mapper namespace="com.cosme.navix.dao.GoodsDao">
+<mapper namespace="com.navix.biz.dao.GoodsDao">
     <resultMap type="Goods" id="goodsResultMap">
         <id property="goodsSeqId" column="SEQ_ID"/>
         <result property="goodsId" column="GOOD_ID"/>
