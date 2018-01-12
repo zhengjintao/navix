@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `navix` /*!40100 DEFAULT CHARACTER SET latin1 */;
+﻿CREATE DATABASE  IF NOT EXISTS `navix` /*!40100 DEFAULT CHARACTER SET latin1 */; 
 USE `navix`;
 -- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
