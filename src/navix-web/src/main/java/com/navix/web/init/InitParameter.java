@@ -15,7 +15,7 @@ public class InitParameter implements ServletInitJobInter {
 	private final Logger log = Logger.getLogger(this.getClass());
 	@Override
 	public void execute(ServletContext context) {
-		log.info("注册系统常量及配置文件");
+		log.info("注册系统常量及配置文件开始");
 		// 注册常量
 		ConstantVarService.registConstant("farm.constant.session.key.logintime.", FarmConstant.SESSION_LOGINTIME);
 		ConstantVarService.registConstant("farm.constant.session.key.current.org", FarmConstant.SESSION_ORG);
@@ -43,6 +43,7 @@ public class InitParameter implements ServletInitJobInter {
 		PropertiesFileService.registConstant("rmi");
 		PropertiesFileService.registConstant("email");
 		memory();
+		log.info("注册系统常量及配置文件结束");
 	}
 	private static void memory() {
 		DecimalFormat df = new DecimalFormat("0.00");

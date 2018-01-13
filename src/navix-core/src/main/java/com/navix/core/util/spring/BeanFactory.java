@@ -26,9 +26,9 @@ public class BeanFactory {
 	}
 
 	public static Object getBean(String beanId, ServletContext servletContext) {
-		ApplicationContext ctx = WebApplicationContextUtils
+		appContext = WebApplicationContextUtils
 				.getWebApplicationContext(servletContext);
-		return ctx.getBean(beanId);
+		return appContext.getBean(beanId);
 	}
 
 }

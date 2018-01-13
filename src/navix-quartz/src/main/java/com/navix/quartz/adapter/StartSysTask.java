@@ -16,8 +16,9 @@ public class StartSysTask implements ServletInitJobInter {
 		FarmQzSchedulerManagerInter aloneIMP = (FarmQzSchedulerManagerInter) BeanFactory
 				.getBean("farmQzSchedulerManagerImpl");
 		try {
+			log.info("计划任务调度启动开始");
 			aloneIMP.start();
-			log.info("started '任务调度'");
+			log.info("计划任务调度启动结束");
 		} catch (Exception e) {
 			log.error(e);
 		}
