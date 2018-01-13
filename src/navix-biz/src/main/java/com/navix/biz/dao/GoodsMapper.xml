@@ -5,17 +5,19 @@
  
 <mapper namespace="com.navix.biz.dao.GoodsDao">
     <resultMap type="Goods" id="goodsResultMap">
-        <id property="goodsSeqId" column="SEQ_ID"/>
-        <result property="goodsId" column="GOOD_ID"/>
-        <result property="goodsKbn" column="GOOD_KBN"/>
-        <result property="goodsImg" column="GOOD_IMG"/>
-        <result property="goodsBland" column="GOOD_BLAND"/>
-        <result property="goodsRefPrice" column="GOOD_REF_PRICE"/>
+        <id property="seqId" column="SEQ_ID"/>
+        <result property="goodsId" column="GOODS_ID"/>
+        <result property="goodsClassSeqId" column="GOODS_CLASS_SEQ_ID"/>
+        <result property="goodsImg" column="GOODS_IMG"/>
+        <result property="goodsBrandSeqId" column="GOODS_BRAND_SEQ_ID"/>
+        <result property="goodsRefPrice" column="GOODS_REF_PRICE"/>
+        <result property="goodsTaxFlg" column="GOODS_TAX_FLG"/>
+        <result property="goodsSize" column="GOODS_SIZE"/>
         <result property="delFlg" column="DEL_FLG"/>
         <result property="createUser" column="CREATE_USER"/>
-        <result property="createDate" column="CREADE_DATE"/>
-        <result property="updateDate" column="UPDATE_USER"/>
-        <result property="name" column="UPDATE_DATE"/>
+        <result property="creadeDate" column="CREADE_DATE"/>
+        <result property="updateUser" column="UPDATE_USER"/>
+        <result property="updateDate" column="UPDATE_DATE"/>
     </resultMap>
     
     <!--商品新规追加 -->
@@ -23,26 +25,29 @@
         insert into mstr_goods(
            SEQ_ID,
            GOODS_ID,
-           GOODS_KBN,
+           GOODS_CLASS_SEQ_ID,
            GOODS_IMG,
-           GOODS_BLAND,
+           GOODS_BRAND_SEQ_ID,
            GOODS_REF_PRICE,
+           GOODS_TAX_FLG,
+           GOODS_SIZE,
            DEL_FLG,
            CREATE_USER,
            CREADE_DATE,
            UPDATE_USER,
-           UPDATE_DATE) values
-           #{goodsSeqId},
+           UPDATE_DATE) values(
+           #{seqId},
            #{goodsId},
-           #{goodsKbn},
+           #{goodsClassSeqId},
            #{goodsImg},
-           #{goodsBland},
+           #{goodsBrandSeqId},
            #{goodsRefPrice},
+           #{goodsTaxFlg},
+           #{goodsSize},
            #{delFlg},
            #{createUser},
-           #{createDate},
-           #{updateUser},
-           #{updateDate})
+           #{creadeDate},
+           #{updateUser})
     </insert>
     
     <!--商品更新-->

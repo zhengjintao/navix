@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.navix.biz.dao.GoodsNameDao">
+    <resultMap type="GoodsName" id="goodsNameResultMap">
+        <id property="seqId" column="SEQ_ID"/>
+        <result property="langKbn" column="LANG_KBN"/>
+        <result property="goodsNm" column="GOODS_NM"/>
+        <result property="goodsSimpleEpx" column="GOODS_SIMPLE_EPX"/>
+        <result property="goodsContext" column="GOODS_CONTEXT"/>
+        <result property="goodsComposition" column="GOODS_COMPOSITION"/>
+        <result property="delFlg" column="DEL_FLG"/>
+        <result property="createUser" column="CREATE_USER"/>
+        <result property="creadeDate" column="CREADE_DATE"/>
+        <result property="updateUser" column="UPDATE_USER"/>
+        <result property="updateDate" column="UPDATE_DATE"/>
+    </resultMap>
+    
+    <!--商品名称新规追加 -->
+    <insert id="insert" parameterType="GoodsName">
+        insert into mname_goods(
+           SEQ_ID,
+           LANG_KBN,
+           GOODS_NM,
+           GOODS_SIMPLE_EPX,
+           GOODS_CONTEXT,
+           GOODS_COMPOSITION,
+           DEL_FLG,
+           CREATE_USER,
+           CREADE_DATE,
+           UPDATE_USER,
+           UPDATE_DATE) values(
+           #{seqId},
+           #{langKbn},
+           #{goodsNm},
+           #{goodsSimpleEpx},
+           #{goodsContext},
+           #{goodsComposition},
+           #{delFlg},
+           #{createUser},
+           #{creadeDate},
+           #{updateUser})
+    </insert>
+    
+    <!--商品名称更新-->
+    <update id="update" parameterType="GoodsName"> 
+    </update>
+    
+    <!--商品名称删除-->
+    <delete id="delete" parameterType="String">
+    	update mname_goods set DEL_FLG = 1 where SEQ_ID = #{goodsSeqId}
+    </delete>
+    
+    <!--商品名称查询（根据商品管理番号查询）-->
+    <select id="selectByGoodsSeqId" parameterType="String" resultMap="goodsNameResultMap">
+        select * from mname_goods where SEQ_ID =#{goodsSeqId}
+    </select>  
+</mapper>
