@@ -145,6 +145,11 @@
 			<artifactId>navix-api</artifactId>
 			<version>${navix.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.navix</groupId>
+			<artifactId>navix-common</artifactId>
+			<version>{navix.version}</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>navix</finalName>
