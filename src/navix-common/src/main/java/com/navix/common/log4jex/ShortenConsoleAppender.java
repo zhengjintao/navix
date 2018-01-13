@@ -1,9 +1,10 @@
-package com.navix.biz.util.log4j.extension;
+package com.navix.common.log4jex;
 
-import org.apache.log4j.RollingFileAppender;
+import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.spi.LoggingEvent;
 
-public class ShortenRollingFileAppender extends RollingFileAppender {
+public class ShortenConsoleAppender extends ConsoleAppender {
+	
 	@Override
 	public void append(LoggingEvent event) {
 		ShortenAppenderUtil.reconstructionFullInfo(event);

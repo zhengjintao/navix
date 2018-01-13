@@ -1,4 +1,4 @@
-package com.navix.biz.util.log4j.extension;
+package com.navix.common.log4jex;
 
 import org.apache.log4j.spi.LocationInfo;
 import org.apache.log4j.spi.LoggingEvent;
