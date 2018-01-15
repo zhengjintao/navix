@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.navix.biz.dao.ShopGoodsAllInfoDao">
+    <resultMap type="ShopGoodsAllInfo" id="shopGoodsAllInfoResultMap">
+        <id property="seqId" column="SEQ_ID"/>
+        <result property="shopId" column="SHOP_ID"/>
+        <result property="shopImg" column="SHOP_IMG"/>
+        <result property="shopKbn" column="SHOP_KBN"/>
+        <result property="shopNm" column="SHOP_NM"/>
+        <result property="shopAddress" column="SHOP_ADDRESS"/>
+        <result property="shopSimpleEpx" column="SHOP_SIMPLE_EPX"/>
+        <result property="diyinfoContext1" column="DIYINFO_CONTEXT_1"/>
+        <result property="diyinfoContext2" column="DIYINFO_CONTEXT_2"/>
+        <result property="diyinfoContext3" column="DIYINFO_CONTEXT_3"/>
+        <result property="shopSeqId" column="SHOP_SEQ_ID"/>
+        <result property="goodsSeqId" column="GOODS_SEQ_ID"/>
+        <result property="goodsDiyinfoSeqId" column="GOODS_DIYINFO_SEQ_ID"/>
+        <result property="goodsPrice" column="GOODS_PRICE"/>
+        <result property="goodsStock" column="GOODS_STOCK"/>
+    </resultMap>
+    
+    <!--店铺商品信息查询（根据【商品管理番号】）-->
+    <select id="selectByGoodsSeqId" resultMap="shopGoodsAllInfoResultMap">
+        select 
+          INFO.SEQ_ID,
+          SMSTR.SHOP_ID,
+          SMSTR.SHOP_IMG,
+          SMSTR.SHOP_KBN,
+          SNM.SHOP_NM,
+          SNM.SHOP_ADDRESS,
+          SNM.SHOP_SIMPLE_EPX,
+          CDIY.DIYINFO_CONTEXT_1,
+          CDIY.DIYINFO_CONTEXT_2,
+          CDIY.DIYINFO_CONTEXT_3,
+          INFO.SHOP_SEQ_ID,
+          INFO.GOODS_SEQ_ID,
+          INFO.GOODS_DIYINFO_SEQ_ID,
+          INFO.GOODS_PRICE,
+          INFO.GOODS_STOCK
+        from 
+            CDATA_SHOP_GOODS_INFO INFO left join MSTR_SHOP SMSTR
+              on INFO.SHOP_SEQ_ID = SMSTR.SEQ_ID 
+              and INFO.DEL_FLG = SMSTR.DEL_FLG
+            left join MNAME_SHOP SNM
+              on SMSTR.SEQ_ID = SNM.SEQ_ID
+              and SMSTR.DEL_FLG = SNM.DEL_FLG
+              and SNM.LANG_KBN = #{2}
+            left join CDATA_DIYINFO CDIY
+              on INFO.GOODS_DIYINFO_SEQ_ID = CDIY.SEQ_ID
+              and INFO.DEL_FLG = CDIY.DEL_FLG
+              and CDIY.LANG_KBN = #{2}
+        where 
+            INFO.GOODS_SEQ_ID =#{0} 
+            and INFO.DEL_FLG = #{1} 
+        order by GOODS_PRICE
+    </select>  
+</mapper>

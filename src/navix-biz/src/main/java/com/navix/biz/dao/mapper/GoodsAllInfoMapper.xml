@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.navix.biz.dao.GoodsAllInfoDao">
+    <resultMap type="GoodsAllInfo" id="goodsAllInfoResultMap">
+        <id property="seqId" column="SEQ_ID"/>
+        <result property="goodsId" column="GOODS_ID"/>
+        <result property="goodsClassSeqId" column="GOODS_CLASS_SEQ_ID"/>
+        <result property="goodsImg" column="GOODS_IMG"/>
+        <result property="goodsBrandSeqId" column="GOODS_BRAND_SEQ_ID"/>
+        <result property="goodsRefPrice" column="GOODS_REF_PRICE"/>
+        <result property="goodsTaxFlg" column="GOODS_TAX_FLG"/>
+        <result property="goodsSize" column="GOODS_SIZE"/>
+        <result property="goodsNm" column="GOODS_NM"/>
+        <result property="goodsSimpleEpx" column="GOODS_SIMPLE_EPX"/>
+        <result property="goodsContext" column="GOODS_CONTEXT"/>
+        <result property="goodsComposition" column="GOODS_COMPOSITION"/>
+        <result property="brandId" column="BRAND_ID"/>
+        <result property="brandNm" column="BRAND_NM"/>
+        <result property="goodsClassId" column="GOODS_CLASS_ID"/>
+        <result property="goodsFclassId" column="GOODS_FCLASS_ID"/>
+    </resultMap>
+    
+    <!--商品全信息查询（根据商品编号查询）-->
+    <select id="selectGoodsAllInfoByGoodsId" parameterType="String" resultMap="goodsAllInfoResultMap">
+        select
+          gMstr.SEQ_ID,
+          gMstr.GOODS_ID,
+          gMstr.GOODS_CLASS_SEQ_ID,
+          gMstr.GOODS_IMG,
+          gMstr.GOODS_BRAND_SEQ_ID,
+          gMstr.GOODS_REF_PRICE,
+          gMstr.GOODS_TAX_FLG,
+          gMstr.GOODS_SIZE,
+          gNm.GOODS_NM,
+          gNm.GOODS_SIMPLE_EPX,
+          gNm.GOODS_CONTEXT,
+          gNm.GOODS_COMPOSITION,
+          bMstr.BRAND_ID,
+          bNm.BRAND_NM,
+          gcMstr.GOODS_CLASS_ID,
+          gcMstr.GOODS_FCLASS_ID
+        from 
+          mstr_goods gMstr left join mname_goods gNm
+            on gMstr.SEQ_ID = gNm.SEQ_ID
+            and gMstr.DEL_FLG = gNm.DEL_FLG
+            and gNm.LANG_KBN = #{2}
+          left join mstr_brand bMstr
+            on gMstr.GOODS_BRAND_SEQ_ID = bMstr.SEQ_ID
+            and gMstr.DEL_FLG = bMstr.DEL_FLG
+          left join mname_brand bNm
+            on bMstr.SEQ_ID = bNm.SEQ_ID
+            and bMstr.DEL_FLG = bNm.DEL_FLG
+            and bNm.LANG_KBN = #{2}
+          left join mstr_goods_class gcMstr
+            on gMstr.GOODS_CLASS_SEQ_ID = gcMstr.SEQ_ID
+            and gMstr.DEL_FLG = gcMstr.DEL_FLG
+        where 
+          gMstr.GOODS_ID =#{0}
+          and gMstr.DEL_FLG = #{1}
+    </select>  
+</mapper>
