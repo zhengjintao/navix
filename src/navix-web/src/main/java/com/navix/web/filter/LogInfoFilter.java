@@ -18,7 +18,9 @@ import com.navix.core.web.constant.FarmConstant;
 
 /**
  * 日志记录项目设置
- * 
+ * MDC信息添加
+ * "IP" ； 客户端IP地址
+ * "USERID" ； 登录用户ID（未登录时设置未 anonymous）
  * @author teikintou
  * @date 2017.1.2
  * 
@@ -36,7 +38,7 @@ public class LogInfoFilter implements Filter {
 		
 		MDC.put("IP", request.getRemoteAddr());
 		
-		String userID = "NONE";
+		String userID = "anonymous";
 		HttpSession session = req.getSession();
 		if (session != null) {
 			LoginUser user = (LoginUser) session

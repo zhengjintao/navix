@@ -20,13 +20,13 @@ public class InitRmiInter implements ServletInitJobInter {
 	@Override
 	public void execute(ServletContext context) {
 		try {
-			if(FarmParameterService.getInstance().getParameter("config.local.rmi.state").toUpperCase().equals("FALSE")){
+			if(FarmParameterService.getInstance().getParameter("rmi.config.local.state").toUpperCase().equals("FALSE")){
 				log.info("RMI服务未配置");
 				return;
 			}
 			
 			log.info("RMI服务启动开始");
-			int port = Integer.valueOf(FarmParameterService.getInstance().getParameter("config.local.rmi.port"));
+			int port = Integer.valueOf(FarmParameterService.getInstance().getParameter("rmi.config.local.port"));
 			String rui = "rmi://127.0.0.1:" + port + "/navixapp";
 			NavixAppInter wda = new NavixAppImpl();
 			LocateRegistry.createRegistry(port);
