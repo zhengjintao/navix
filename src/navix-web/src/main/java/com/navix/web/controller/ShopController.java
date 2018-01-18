@@ -21,7 +21,7 @@ import com.navix.core.page.ViewMode;
 import com.navix.core.web.WebUtils;
 import com.navix.web.util.ThemesUtil;
 
-@RequestMapping("/goods")
+@RequestMapping("/shop")
 @Controller
 public class ShopController extends WebUtils {
 	private final static Logger log = Logger.getLogger(ShopController.class);

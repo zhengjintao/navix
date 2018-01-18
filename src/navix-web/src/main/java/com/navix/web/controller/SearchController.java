@@ -23,10 +23,10 @@ import com.navix.web.util.ThemesUtil;
  * @author fangkangming
  *
  */
-@RequestMapping("/goods")
+@RequestMapping("/search")
 @Controller
 public class SearchController extends WebUtils {
-	private final static Logger log = Logger.getLogger(GoodsController.class);
+	private final static Logger log = Logger.getLogger(SearchController.class);
 	@Resource  
 	private GoodsAllInfoService goodsAllInfoService;
 	@Resource 
