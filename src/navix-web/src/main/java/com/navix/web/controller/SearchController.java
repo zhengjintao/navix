@@ -18,9 +18,14 @@ import com.navix.core.page.ViewMode;
 import com.navix.core.web.WebUtils;
 import com.navix.web.util.ThemesUtil;
 
+/**
+ * 商品检索Controller
+ * @author fangkangming
+ *
+ */
 @RequestMapping("/goods")
 @Controller
-public class GoodsSearchController extends WebUtils {
+public class SearchController extends WebUtils {
 	private final static Logger log = Logger.getLogger(GoodsController.class);
 	@Resource  
 	private GoodsAllInfoService goodsAllInfoService;
@@ -28,13 +33,13 @@ public class GoodsSearchController extends WebUtils {
 	private ShopGoodsAllInfoService shopGoodsAllInfoService;
 	
 	/**
-	 * 查看商品
+	 * 根据商品条码检索对应全部店铺（条形码）
 	 * 
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping(value = "/view1/Pub{goodId}", method = RequestMethod.GET)
-	public ModelAndView showDoc(@PathVariable("goodId") String goodId, HttpSession session, HttpServletRequest request)
+	@RequestMapping(value = "/search/Goods{goodId}", method = RequestMethod.GET)
+	public ModelAndView ShowSearchBygoodsId(@PathVariable("goodId") String goodId, HttpSession session, HttpServletRequest request)
 			throws Exception {
 		// 言语区分
 		String langKbn = "C";
@@ -52,6 +57,20 @@ public class GoodsSearchController extends WebUtils {
 				.putAttr("GOODSINFO", goodsAllInfo)
 				.putAttr("SHOPINFOLIST", shopGoodsAllInfoList)
 				.returnModelAndView(ThemesUtil.getThemePath() + "/goods/goodsSearchResListview");
+		
+	}
+	
+	/**
+	 * 根据关键字检索商品（关键字）
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping(value = "/search/Key{keyWord}", method = RequestMethod.GET)
+	public ModelAndView ShowSearchByGoodsKeyWord(@PathVariable("keyWord") String keyWord, HttpSession session, HttpServletRequest request)
+			throws Exception {	
+		// 商品编号对应的店铺信息取得
+		return null;
 		
 	}
 }
